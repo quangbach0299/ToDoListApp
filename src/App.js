@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import ToDoList from "./JSS_StyledCompontents/BaiTapStyleComponent/ToDoList/ToDoList";
+// import LifeCycleReact from "./LifeCycleReact/LifeCycleReact";
+// import DemoJSS from "./JSS_StyledCompontents/DemoJSS/DemoJSS";
+// import DemoTheme from "./JSS_StyledCompontents/Themes/DemoTheme";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// import UserProfile from "./FormValidation/UserProfile/UserProfile";
+
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        {/* <UserProfile></UserProfile> */}
+        {/* <DemoJSS></DemoJSS> */}
+        {/* <DemoTheme></DemoTheme> */}
+        <ToDoList></ToDoList>
+        {/* <LifeCycleReact></LifeCycleReact> */}
+      </div>
+    );
+  }
 }
-
-export default App;
